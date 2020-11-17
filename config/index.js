@@ -1,3 +1,6 @@
+import { config as configuration } from 'dotenv';
+configuration();
+
 export const config = {
   dev: process.env.NODE_ENV !== 'production',
   port: process.env.PORT || 3000,
